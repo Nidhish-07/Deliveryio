@@ -11,6 +11,7 @@ import { useNavigation } from "@react-navigation/native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Ionicons, FontAwesome, Entypo } from "@expo/vector-icons";
 import Categories from "../components/Categories";
+import Featured from "../components/Featured";
 
 type Props = {};
 
@@ -52,6 +53,22 @@ const HomeScreen = (props: Props) => {
 
         <ScrollView contentContainerStyle={{ paddingBottom: 100 }}>
           <Categories></Categories>
+
+          <Featured
+            title="featured"
+            description="lorem epsum"
+            id={Math.round(1)}
+          ></Featured>
+          <Featured
+            title="featured"
+            description="lorem epsum"
+            id={Math.round(1)}
+          ></Featured>
+          <Featured
+            title="featured"
+            description="lorem epsum"
+            id={Math.round(1)}
+          ></Featured>
         </ScrollView>
       </View>
     </SafeAreaView>
